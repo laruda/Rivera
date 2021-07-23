@@ -61,3 +61,33 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+
+Assets/AmplifyShaderEditor/
+
+Assets/Gizmos/
+
+Assets/net.fabrejean/
+
+Assets/PlayMaker/
+
+Assets/SuperEditor/
+
+Assets/AmplifyShaderEditor.meta
+
+Assets/AmplifyShaderEditor.unitypackage.meta
+
+Assets/net.fabrejean.meta
+
+Assets/PlayMaker.meta
+
+Assets/Plugins/PlayMaker/
+
+
+
+Assets/Plugins/PlayMaker.meta
+
+Assets/SuperEditor.meta
+
+
+
+Assets/TextMesh Pro.meta
