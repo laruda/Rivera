@@ -54,7 +54,7 @@ Material:
     - _ReceivesSSRTransparent: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _Rimoffset: 0.26
+    - _Rimoffset: 0
     - _Smoothness: 0.6
     - _SmoothnessPower: 0.52
     - _SrcBlend: 1

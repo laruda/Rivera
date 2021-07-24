@@ -40,6 +40,9 @@ public class SelectMaterial : MonoBehaviour
             float emissionTemp = EmissionValue;
             emissionTemp -= Time.deltaTime / 2;
             selectedMaterial.SetFloat("_EmissionIntensity", emissionTemp);
+            if ( emissionTemp < 0.1){
+                selectedMaterial.SetFloat("_Rimoffset", 1f);
+            }
         }
 
 
@@ -49,6 +52,7 @@ public class SelectMaterial : MonoBehaviour
     {
         if (matProperties.IsPointerOverUI == false)
         {
+            selectedMaterial.SetFloat("_Rimoffset", 0.26f);
             matProperties.SwitchStateToOne();
             selectedMaterial.SetFloat("_EmissionIntensity", 0.8f);
 
