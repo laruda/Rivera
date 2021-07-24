@@ -15,7 +15,7 @@ public class SelectMaterial : MonoBehaviour
     [SerializeField] private UIMatController matProperties;
 
     [SerializeField] private TMP_Text objNameTMP;
-
+    [SerializeField] private ObjectActions selectOBJ;
 
 
 
@@ -23,9 +23,12 @@ public class SelectMaterial : MonoBehaviour
     {
         selectedMaterial = this.gameObject.GetComponent<Renderer>().material;
 
+        selectOBJ = GameObject.Find("GameProperties").GetComponent<ObjectActions>();
+
         matProperties = GameObject.Find("GameProperties").GetComponent<UIMatController>();
 
         objNameTMP = GameObject.Find("ObjectNameTMP").GetComponent<TMP_Text>();
+        
     }
 
 
@@ -40,7 +43,8 @@ public class SelectMaterial : MonoBehaviour
             float emissionTemp = EmissionValue;
             emissionTemp -= Time.deltaTime / 2;
             selectedMaterial.SetFloat("_EmissionIntensity", emissionTemp);
-            if ( emissionTemp < 0.1){
+            if (emissionTemp < 0.1)
+            {
                 selectedMaterial.SetFloat("_Rimoffset", 1f);
             }
         }
@@ -52,6 +56,7 @@ public class SelectMaterial : MonoBehaviour
     {
         if (matProperties.IsPointerOverUI == false)
         {
+            selectOBJ.SelectedGameOBJ = this.gameObject;
             selectedMaterial.SetFloat("_Rimoffset", 0.26f);
             matProperties.SwitchStateToOne();
             selectedMaterial.SetFloat("_EmissionIntensity", 0.8f);

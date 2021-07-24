@@ -38,6 +38,7 @@ public class UIMatController : MonoBehaviour
     void Awake()
     {
         TargetMaterial = GameObject.Find("Sphere").GetComponent<Renderer>().material;
+        
         state = State.One;
 
     }
