@@ -16,7 +16,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   quality:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 3
   rayTracing:
     m_OverrideState: 1
     m_Value: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
     max: 4
   directLightingStrength:
     m_OverrideState: 1
-    m_Value: 0.276
+    m_Value: 0.652
     min: 0
     max: 1
   radius:
@@ -60,7 +60,7 @@ MonoBehaviour:
       m_Bits: 4294967295
   m_StepCount:
     m_OverrideState: 1
-    m_Value: 16
+    m_Value: 26
     min: 2
     max: 32
   m_FullResolution:
