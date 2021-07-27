@@ -7,17 +7,7 @@ public class Game_Init_Settings : MonoBehaviour
     void Awake()
     {
         Physics.autoSimulation = false;
-        Application.targetFrameRate = 30;
+        Application.targetFrameRate = 24;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

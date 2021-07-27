@@ -9,11 +9,14 @@ public class MouseOverUI : MonoBehaviour
 
     void Awake()
     {
-        matProperties = GameObject.Find("GameProperties").GetComponent<UIMatController>();
+       
+            matProperties = GameObject.Find("GameProperties").GetComponent<UIMatController>();
+        
+
     }
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -22,8 +25,9 @@ public class MouseOverUI : MonoBehaviour
         matProperties.IsPointerOverUI = IsMouseOverUI();
     }
 
-   
-    public bool IsMouseOverUI(){
+
+    public bool IsMouseOverUI()
+    {
         return EventSystem.current.IsPointerOverGameObject();
     }
 }

@@ -65,19 +65,7 @@ public class SelectMaterial : MonoBehaviour
             matProperties.TargetMaterial = selectedMaterial;
         }
 
-
-
-
-    }
-
-    public void AOSlider()
-    {
-
     }
 
 
-    private void OwnMaterialParameters()
-    {
-
-    }
 }

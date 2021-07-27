@@ -9,28 +9,29 @@ using UnityEngine.Rendering.HighDefinition;
 public class ChangeVolume : MonoBehaviour
 {
     public Volume volume;
-    public float valor01;
-    
+
+
     public Vector4 vectorazo;
-    public Color ShadowTint;
     
+
     public HDAdditionalLightData luces;
 
     public FlexibleColorPicker picker;
-    public Material mat01;
-   
+
+    private Color SetAlfa = new Color(0, 0, 0, 1f);
+
+    [Range(0, 1)]
+    public float shadowDimmerValue = 0.9f;
+
+
+
 
 
     void Awake()
     {
-        ShadowTint = new Vector4(1,1,1,0);
+        
     }
-    // Start is called before the first frame update
-    void Start()
-    {
 
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -44,9 +45,9 @@ public class ChangeVolume : MonoBehaviour
             _smh.shadows.Override(vectorazo);
         }
 
-        vectorazo = ShadowTint;
+        vectorazo = picker.color - SetAlfa;
 
-        // luces.shadowDimmer = valor01;
+        luces.shadowDimmer = shadowDimmerValue;
         // mat01.color = picker.color;
 
 
