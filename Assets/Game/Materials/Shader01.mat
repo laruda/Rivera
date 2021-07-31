@@ -44,7 +44,7 @@ Material:
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 0
-    - _EmissionIntensity: 0.2
+    - _EmissionIntensity: -0.011849733
     - _EnableFogOnTransparent: 1
     - _Keyword0: 0
     - _MetalicPower: 0
@@ -55,8 +55,8 @@ Material:
     - _ReceivesSSRTransparent: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _Rimoffset: 0
-    - _Smoothness: 0.6
+    - _Rimoffset: 1
+    - _Smoothness: 0
     - _SmoothnessPower: 0.52
     - _SrcBlend: 1
     - _StencilRef: 0
@@ -81,7 +81,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
+    - _Color: {r: 0.94051, g: 0.94051, b: 0.94051, a: 1}
     - _Color0: {r: 0.7735849, g: 0.4488252, b: 0.4488252, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _Emission: {r: 850731.5, g: 44141.734, b: 44141.734, a: 1}

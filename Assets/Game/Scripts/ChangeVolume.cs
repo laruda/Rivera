@@ -9,21 +9,16 @@ using UnityEngine.UI;
 
 public class ChangeVolume : MonoBehaviour
 {
+
+    private Vector4 ShadowMiddleLightVariables;
+
+    [Header("Gather Data"),Space(10)]
     public Volume volume;
-
-
-    public Vector4 vectorazo;
-
-
     public HDAdditionalLightData LightData;
     public Light SunLight;
-
     public FlexibleColorPicker picker;
 
     private Color SetAlfa = new Color(0, 0, 0, 1f);
-
-    [Range(0, 1)]
-    //public float shadowDimmerValue = 0.9f;
 
 
     [Header("Sliders")]
@@ -31,8 +26,6 @@ public class ChangeVolume : MonoBehaviour
     [SerializeField] private Slider LightMultiplayerSlider;
     [SerializeField] private Slider ShadowDimmerSlider;
     [SerializeField] private Slider TemperatureSlider;
-
-
 
 
 
@@ -45,15 +38,15 @@ public class ChangeVolume : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
 
         if (volume.profile.TryGet(out ShadowsMidtonesHighlights _smh))
         {
-            
-            _smh.shadows.Override(vectorazo);
+
+            _smh.shadows.Override(ShadowMiddleLightVariables);
         }
 
-        vectorazo = picker.color - SetAlfa;
+        ShadowMiddleLightVariables = picker.color - SetAlfa;
 
 
         AssingPosSliders();

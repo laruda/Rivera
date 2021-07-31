@@ -173,4 +173,14 @@ public class ObjectActions : MonoBehaviour
 
 
     }
+    public void ResetObjPosition()
+    {
+        SelectedGameOBJ.transform.position = new Vector3(0f, 0.25f, 0f);
+    }
+
+    public void ResetObjRotation()
+    {
+
+        SelectedGameOBJ.transform.eulerAngles = Vector3.zero;
+    }
 }
